@@ -69,8 +69,8 @@ class PredefinedSlugifyTestCase(unittest.TestCase):
         self.assertEqual(slugify_url('The Über article'), 'uber-article')
 
     def test_slugify_filename(self):
-        self.assertEqual(slugify_filename(u'Дrаft №2.txt'), u'Draft_2.txt')
-
+        self.assertEqual(slugify_filename(u'Дrаft №2.txt'), u'Draft_No._2.txt')
+        
 
 class ToLowerTestCase(unittest.TestCase):
 
